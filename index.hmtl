@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de San Valentín</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      height:100vh;
+      overflow:hidden;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #1d2f7a, #05060f 72%);
+      position:relative;
+      color:#fff;
+    }
+
+    /* Estrellas */
+    .stars{
+      position:absolute;
+      inset:0;
+      background-image:
+        radial-gradient(2px 2px at 10% 20%, #fff, transparent),
+        radial-gradient(1px 1px at 30% 70%, #fff, transparent),
+        radial-gradient(2px 2px at 80% 30%, #fff, transparent),
+        radial-gradient(1px 1px at 60% 50%, #fff, transparent),
+        radial-gradient(2px 2px at 90% 80%, #fff, transparent),
+        radial-gradient(1px 1px at 40% 10%, #fff, transparent),
+        radial-gradient(2px 2px at 15% 85%, #fff, transparent),
+        radial-gradient(1px 1px at 75% 60%, #fff, transparent),
+        radial-gradient(1px 1px at 55% 25%, #fff, transparent),
+        radial-gradient(2px 2px at 25% 35%, #fff, transparent);
+      opacity:.85;
+      z-index:1;
+    }
+
+    /* Luna */
+    .moon{
+      position:absolute;
+      top:35px;
+      right:45px;
+      width:95px;
+      height:95px;
+      border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #d6d6ff);
+      box-shadow: 0 0 50px rgba(255,255,255,.35);
+      z-index:2;
+    }
+
+    /* Brillo suave */
+    .glow{
+      position:absolute;
+      left:50%;
+      bottom:0;
+      transform:translateX(-50%);
+      width:700px;
+      height:360px;
+      background: radial-gradient(circle, rgba(255,46,120,.18), transparent 65%);
+      z-index:2;
+      pointer-events:none;
+    }
+
+    /* Título */
+    .title{
+      position:absolute;
+      top:140px;
+      left:50%;
+      transform:translateX(-50%);
+      text-align:center;
+      font-size:36px;
+      font-weight:900;
+      color:#ffd1e6;
+      text-shadow: 0 0 15px rgba(255,46,120,.65);
+      z-index:10;
+      width:95%;
+      max-width:800px;
+      padding:
